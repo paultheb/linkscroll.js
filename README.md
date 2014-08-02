@@ -6,7 +6,8 @@ linkscroll.js
 
 <h1>Setup</h1>
 <ol>
-<li>Get jQuery by <a href="http://jquery.com/download/">download</a> or <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">CDN</a>.</li>
+<li>Get jQuery</li>
+<li>Get jQuery UI</li>
 <li>Download the linkscroll archive by clicking "Download ZIP" to the right.</li>
 <li>Include the linkscroll script with <code>src="js/linkscroll.min.js"</code> (include AFTER jQuery)</li>
 </ol>
