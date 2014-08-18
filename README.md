@@ -22,7 +22,7 @@ For links that you wish to have scroll to the location of other elements on the 
 
 For links that you wish to have scroll to the top of the page:
 
-1. Add `class="topscroll" to the anchor tag.
+1. Add `class="topscroll"` to the anchor tag.
 
 Defaults / Customization
 ------------------------
