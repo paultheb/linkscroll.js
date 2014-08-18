@@ -17,7 +17,7 @@ Use
 
 For links that you wish to have scroll to the location of other elements on the page:
 
-1. Add `class="linkscroll" to the anchor tag.
+1. Add `class="linkscroll"` to the anchor tag.
 2. Set the destination of the anchor tag: `href="destination_element"`
 
 For links that you wish to have scroll to the top of the page:
