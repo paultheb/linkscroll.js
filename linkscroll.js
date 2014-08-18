@@ -3,7 +3,7 @@
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
             var speed = $(this).attr('data-speed');
             if (typeof speed !== typeof undefined && speed !== false) {
-                speed = parseInt(speed);
+                speed = parseInt(speed, 10);
             } else {
                 speed = 800;
             }
@@ -19,7 +19,7 @@
     $('.topscroll').click(function(){
         var speed = $(this).attr('data-speed');
             if (typeof speed !== typeof undefined && speed !== false) {
-                speed = parseInt(speed);
+                speed = parseInt(speed, 10);
             } else {
                 speed = 800;
             }
