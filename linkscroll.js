@@ -2,6 +2,7 @@
     $('.linkscroll[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
             var speed = $(this).attr('data-speed');
+            var target = $(this.hash);
             if (typeof speed !== typeof undefined && speed !== false) {
                 speed = parseInt(speed, 10);
             } else {
