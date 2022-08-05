@@ -1,4 +1,4 @@
-const links = document.querySelectorAll('a');
+const links = document.querySelectorAll('a.linkscroll');
 
 for (const link of links) {
   link.addEventListener('click', clickHandler);
