@@ -1,8 +1,6 @@
 var linkscroll = (function (window, undefined) {
 
-  let behavior = 'smooth';
-
-  function toTargetHandler(e) {
+  function _toTargetHandler(e) {
     e.preventDefault();
     
     const target = this.getAttribute('data-target');
@@ -10,30 +8,28 @@ var linkscroll = (function (window, undefined) {
 
     scroll({
       top: offsetTop,
-      behavior: behavior
+      behavior: 'smooth'
     });
   }
 
-  function toTopHanlder(e) {
+  function _toTopHanlder(e) {
     e.preventDefault();
     scroll({
       top: 0,
-      behavior: behavior
+      behavior: 'smooth'
     })
   }
-
-  function init(options) {
-    behavior = options.behavior;
-
+  function init() {
+    
     const toTargetLinks = document.querySelectorAll('.linkscroll-target');
     const toTopLinks = document.querySelectorAll('.linkscroll-top');
 
     for (const link of toTargetLinks) {
-      link.addEventListener('click', toTargetHandler);
+      link.addEventListener('click', _toTargetHandler);
     }
 
     for (const link of toTopLinks) {
-      link.addEventListener('click', toTopHanlder);
+      link.addEventListener('click', _toTopHanlder);
     }
   }
 
