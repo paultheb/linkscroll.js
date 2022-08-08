@@ -1,9 +1,15 @@
-linkscroll.js
-=============
+# linkscroll.js
 
-Version 3.0
------
+Target-based automatic scrolling on click.
 
-Automatic scrolling for anchor tags in pure JavaScript.
+## How to Use
 
-Currently only set up for anchor tags.
+To scroll to an element on the page:
+```
+class="linkscroll-target" data-target="#element"
+```
+
+To scroll to the top of the page:
+```
+class="linkscroll-top"
+```
